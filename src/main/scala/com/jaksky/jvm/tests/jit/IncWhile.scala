@@ -11,7 +11,7 @@ import org.openjdk.jmh.annotations._
 class IncWhile {
 
   @Benchmark
-  def main(): Int = {
+  def testJit(): Int = {
     var i: Int = 0
     var limit = 0
 
@@ -32,6 +32,6 @@ class IncWhile {
 
 object IncWhile {
   def main(args: Array[String]): Unit = {
-    (new IncWhile).main()
+    (new IncWhile).testJit()
   }
 }

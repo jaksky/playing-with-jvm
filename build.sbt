@@ -17,6 +17,7 @@ javaOptions in (run) ++= Seq(
 //  "-XX:+PrintInlining",
 //  "-XX:-Inline"
 //  "-XX:CompileCommand=dontinline, com/jaksky/jvm/tests/jit/IncFor.inc"
+  "-XX:LoopOptsCount=0"
 )
 
 mainClass in run := Some("com.jaksky.jvm.tests.jit.IncWhile")
